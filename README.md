@@ -47,7 +47,7 @@ func main() {
 
 	id := bus.Subscribe(eventSolarEclipse, func(e Event) {
 		se := e.(*solarEclipseEvent)
-        fmt.Printf("solar eclipse for %v seconds", se.duration)
+		fmt.Printf("solar eclipse for %v seconds", se.duration)
 	})
 	bus.Publish(&solarEclipseEvent{
 		duration: duration,
