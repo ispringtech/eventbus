@@ -52,7 +52,7 @@ func main() {
 	bus.Publish(&solarEclipseEvent{
 		duration: duration,
 	})
-    bus.Unsubscribe(id);
+	bus.Unsubscribe(id);
 }
 ```
 
