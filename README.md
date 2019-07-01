@@ -42,7 +42,7 @@ Create the bus (it's better to create bus in the `main` function) and feel free 
 
 ```go
 func main() {
-	bus := New()
+	bus := eventbus.New()
 	duration := 100 * time.Second
 
 	id := bus.Subscribe(eventSolarEclipse, func(e Event) {
